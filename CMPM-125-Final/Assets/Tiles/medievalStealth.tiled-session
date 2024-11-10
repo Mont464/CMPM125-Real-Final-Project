@@ -1,0 +1,43 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "testbed.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "#environmentTileset": {
+            "scaleInDock": 1
+        },
+        "testbed.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 201.25,
+                "y": -16
+            }
+        },
+        "testbed.tmx#environmentTileset": {
+            "scaleInDock": 1
+        }
+    },
+    "last.imagePath": "C:/Users/kirae/Downloads/School/Quarter 1/CMPM 125/CMPM125-Real-Final-Project/CMPM-125-Final/Assets/Tiles",
+    "map.fixedSize": false,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "openFiles": [
+        "testbed.tmx"
+    ],
+    "project": "medievalStealth.tiled-project",
+    "recentFiles": [
+        "testbed.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 8,
+        "width": 8
+    }
+}
