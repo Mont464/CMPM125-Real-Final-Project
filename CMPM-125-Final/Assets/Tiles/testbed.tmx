@@ -3,1019 +3,1019 @@
  <tileset firstgid="1" name="environmentTileset" tilewidth="8" tileheight="8" tilecount="4096" columns="64">
   <image source="tiles.png" width="512" height="512"/>
   <tile id="0">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="1">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="3">
+    <object id="2" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="2">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="3">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="4">
+    <object id="3" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="4">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="9">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="10">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="11">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="12">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="13">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="14">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="15">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="16">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="17">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="18">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="19">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="20">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="21">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="22">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="64">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="65">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="66">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="67">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="68">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="73">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="74">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="75">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="76">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="77">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="78">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="79">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="80">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="81">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="82">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="83">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="84">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="85">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="86">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="128">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="129">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="130">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="131">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="132">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="137">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="138">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="139">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="140">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="141">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="142">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="143">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="144">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="145">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="146">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="147">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="148">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="149">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="150">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="2" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="201">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="202">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="203">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="204">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="205">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="206">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="207">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="208">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="209">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="210">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="211">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="212">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="213">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="214">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="265">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="266">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="267">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="268">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="269">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="270">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="271">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="272">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="273">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="274">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="275">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="276">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="277">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="278">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="329">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="330">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="331">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="332">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="333">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="334">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="335">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="336">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="337">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="338">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="339">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="340">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="341">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="342">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="393">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="394">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="395">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="396">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="397">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="398">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="399">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="400">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="401">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="402">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="403">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="404">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="405">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="406">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="457">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="458">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="459">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="460">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="461">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="462">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="463">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="464">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="465">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="466">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="467">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="468">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="469">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="470">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="521">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="522">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="523">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="524">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="525">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="526">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="527">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="528">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="529">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="530">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="531">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="532">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="533">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="534">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="585">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="586">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="587">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="588">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="589">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="590">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="591">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="592">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="593">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="594">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="595">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="596">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="597">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="598">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="649">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="650">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="651">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="652">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="653">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="654">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="655">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="656">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="657">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="658">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="659">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="660">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="661">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="662">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="713">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="714">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="715">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="716">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="717">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="718">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="719">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="720">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="721">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="722">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="723">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="724">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="725">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="726">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="2" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="781">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="782">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="783">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="784">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="785">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="786">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="787">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="788">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="789">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="790">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="845">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="846">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="847">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="848">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="849">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="850">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="851">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="852">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="853">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="854">
-   <properties>
-    <property name="ColliderType" value="Grid"/>
-   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
   </tile>
  </tileset>
  <layer id="1" name="Tile Layer 1" width="48" height="32">
