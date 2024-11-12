@@ -15,16 +15,18 @@
             "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 201.75,
-                "y": 2.5
+                "x": 165.25,
+                "y": 138
             }
         },
         "testbed.tmx#environmentTileset": {
             "scaleInDock": 1
         }
     },
+    "last.exportedFilePath": "C:/Users/kirae/Downloads/School/Quarter 1/CMPM 125/CMPM125-Real-Final-Project/CMPM-125-Final/Assets/Tiles",
     "last.imagePath": "C:/Users/kirae/Downloads/School/Quarter 1/CMPM 125/CMPM125-Real-Final-Project/CMPM-125-Final/Assets/Tiles",
     "map.fixedSize": false,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 8,
     "map.tileWidth": 8,
