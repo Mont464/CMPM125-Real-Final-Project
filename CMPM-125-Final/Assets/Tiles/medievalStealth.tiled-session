@@ -5,9 +5,13 @@
     },
     "activeFile": "testbed.tmx",
     "expandedProjectPaths": [
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "": {
+            "scaleInEditor": 1
+        },
         "#environmentTileset": {
             "scaleInDock": 1
         },
@@ -15,8 +19,8 @@
             "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 165.25,
-                "y": 138
+                "x": 258.25,
+                "y": 152.5
             }
         },
         "testbed.tmx#environmentTileset": {
