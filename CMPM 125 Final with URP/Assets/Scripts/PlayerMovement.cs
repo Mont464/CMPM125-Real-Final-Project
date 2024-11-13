@@ -5,6 +5,7 @@ using UnityEngine;
 
 //Crouch code found at: https://www.youtube.com/watch?v=xCxSjgYTw9c
 //IsGrounded code found at: https://www.youtube.com/watch?v=P_6W-36QfLA
+//Attack code found at: https://www.youtube.com/watch?v=rwO3TE1G3ag
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Keybinds")]
     private KeyCode jumpKey = KeyCode.Space;
     private KeyCode crouchKey = KeyCode.S;
+    private KeyCode attackKey = KeyCode.J;
 
     [Header("Player Size")]
     private float startScaleY = 1f;
@@ -28,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 boxSize;
     [SerializeField] private LayerMask groundLayer;
     private float castDistance = 0.95f;
+
+    [Header("Attack")]
+    public GameObject attackPoint;
+    public float radius;
+    public LayerMask enemies;
 
 
     private void Awake()
@@ -56,6 +63,11 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(transform.localScale.x, startScaleY);
             moveSpeed = walkSpeed;
         }
+
+        if(Input.GetKeyDown(attackKey))
+        {
+            Attack();
+        }
     }
 
     private void FixedUpdate()
@@ -69,8 +81,18 @@ public class PlayerMovement : MonoBehaviour
         else { return false; }
     }
 
+    public void Attack()
+    {
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+        foreach (Collider2D enemyGameObject in enemy)
+        {
+            UnityEngine.Debug.Log("Hit enemy");
+        }
+    }
+
     private void OnDrawGizmos() //Testing
     {
-        Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast
+        Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast for IsGrounded
+        Gizmos.DrawWireSphere(attackPoint.transform.position, radius); //Display attack radius
     }
 }
