@@ -564,7 +564,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  castDistance: 0.95
+  sideSize: {x: 0.2, y: 1.7}
 --- !u!70 &1192336315
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

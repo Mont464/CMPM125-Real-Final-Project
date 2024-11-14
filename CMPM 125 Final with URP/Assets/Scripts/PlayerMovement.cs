@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //Crouch code found at: https://www.youtube.com/watch?v=xCxSjgYTw9c
@@ -28,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 boxSize;
     [SerializeField] private LayerMask groundLayer;
     private float castDistance = 0.95f;
+
+    [Header("Check Sides")]
+    [SerializeField] private Vector2 sideSize;
+    private float sideCastDistance = 0.6f;
+
 
 
     private void Awake()
@@ -60,7 +66,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y); //Left and right movement
+        if ((Input.GetAxis("Horizontal") >= 0 && !blockedOnSide(transform.right)) || (Input.GetAxis("Horizontal") < 0 && !blockedOnSide(-transform.right)))
+        {
+            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y); //Left and right movement
+        }
     }
 
     public bool IsGrounded()
@@ -69,8 +78,19 @@ public class PlayerMovement : MonoBehaviour
         else { return false; }
     }
 
+    public bool blockedOnSide(Vector2 transformDirection)
+    {
+        if (Physics2D.BoxCast(transform.position, sideSize, 0, transformDirection, sideCastDistance, groundLayer))
+        {
+            return true;
+        }
+        return false;
+    }
+
     private void OnDrawGizmos() //Testing
     {
         Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast
+        Gizmos.DrawWireCube(transform.position + transform.right * sideCastDistance, sideSize); //Display BoxCast
+        Gizmos.DrawWireCube(transform.position - transform.right * sideCastDistance, sideSize); //Display BoxCast
     }
 }
