@@ -24,6 +24,7 @@ public class EnemyMachine : MonoBehaviour
     public Transform target;
     public Transform waypoint;
     public Transform start;
+    private Transform temp;
     public GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -86,11 +87,12 @@ public class EnemyMachine : MonoBehaviour
             }
             else
             {
-                private Transform temp = waypoint;
+                // If waypoint is reached, go back to the start, keeping the same waypoint
+                temp = waypoint;
                 waypoint = start;
                 start = temp;
             }
-        }
+        } 
         else
         {
             currentState = State.Idle;
@@ -152,5 +154,6 @@ public class EnemyMachine : MonoBehaviour
         // Use raytracing to check if player is in sight
         // If player is in sight, return true
         // If player is not in sight, return false
+        return false;
     }
 }
