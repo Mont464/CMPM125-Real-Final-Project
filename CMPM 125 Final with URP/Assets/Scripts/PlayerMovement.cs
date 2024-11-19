@@ -100,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
             return true;
         }
         return false;
+    }
 
     public void Attack()
     {
