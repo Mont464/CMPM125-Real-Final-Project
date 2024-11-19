@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //Crouch code found at: https://www.youtube.com/watch?v=xCxSjgYTw9c
@@ -31,6 +32,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     private float castDistance = 0.95f;
 
+    [Header("Check Sides")]
+    [SerializeField] private Vector2 sideSize;
+    private float sideCastDistance = 0.6f;
+
     [Header("Attack")]
     public GameObject attackPoint;
     public float radius;
@@ -56,12 +61,16 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(transform.localScale.x, crouchScaleY);
             rb.AddForce(Vector2.down * 5f, ForceMode2D.Impulse);
             moveSpeed = crouchSpeed;
+
+            sideSize = sideSize / 2f;
         }
 
         if (Input.GetKeyUp(crouchKey)) //Crouch released
         {
             transform.localScale = new Vector2(transform.localScale.x, startScaleY);
             moveSpeed = walkSpeed;
+
+            sideSize = sideSize * 2f;
         }
 
         if(Input.GetKeyDown(attackKey))
@@ -72,7 +81,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y); //Left and right movement
+        if ((Input.GetAxis("Horizontal") >= 0 && !blockedOnSide(transform.right)) || (Input.GetAxis("Horizontal") < 0 && !blockedOnSide(-transform.right)))
+        {
+            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y); //Left and right movement
+        }
     }
 
     public bool IsGrounded()
@@ -80,6 +92,14 @@ public class PlayerMovement : MonoBehaviour
         if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer)) { return true; }
         else { return false; }
     }
+
+    public bool blockedOnSide(Vector2 transformDirection)
+    {
+        if (Physics2D.BoxCast(transform.position, sideSize, 0, transformDirection, sideCastDistance, groundLayer))
+        {
+            return true;
+        }
+        return false;
 
     public void Attack()
     {
@@ -92,6 +112,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDrawGizmos() //Testing
     {
+
+        Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast
+        Gizmos.DrawWireCube(transform.position + transform.right * sideCastDistance, sideSize); //Display BoxCast
+        Gizmos.DrawWireCube(transform.position - transform.right * sideCastDistance, sideSize); //Display BoxCast
         //Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast for IsGrounded
         //Gizmos.DrawWireSphere(attackPoint.transform.position, radius); //Display attack radius
     }
