@@ -55,12 +55,16 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(transform.localScale.x, crouchScaleY);
             rb.AddForce(Vector2.down * 5f, ForceMode2D.Impulse);
             moveSpeed = crouchSpeed;
+
+            sideSize = sideSize / 2f;
         }
 
         if (Input.GetKeyUp(crouchKey)) //Crouch released
         {
             transform.localScale = new Vector2(transform.localScale.x, startScaleY);
             moveSpeed = walkSpeed;
+
+            sideSize = sideSize * 2f;
         }
     }
 
