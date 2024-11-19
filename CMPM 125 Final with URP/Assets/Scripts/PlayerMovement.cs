@@ -86,13 +86,13 @@ public class PlayerMovement : MonoBehaviour
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
         foreach (Collider2D enemyGameObject in enemy)
         {
-            UnityEngine.Debug.Log("Hit enemy");
+            //UnityEngine.Debug.Log("Hit enemy"); //Test attack
         }
     }
 
     private void OnDrawGizmos() //Testing
     {
-        Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast for IsGrounded
-        Gizmos.DrawWireSphere(attackPoint.transform.position, radius); //Display attack radius
+        //Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast for IsGrounded
+        //Gizmos.DrawWireSphere(attackPoint.transform.position, radius); //Display attack radius
     }
 }
