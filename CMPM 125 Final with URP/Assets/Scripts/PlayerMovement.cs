@@ -8,6 +8,8 @@ using UnityEngine;
 //IsGrounded code found at: https://www.youtube.com/watch?v=P_6W-36QfLA
 //Attack code found at: https://www.youtube.com/watch?v=rwO3TE1G3ag
 
+//Lo: Once platforms are added, attach PlatForm Effector 2D for player to pass through
+
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
@@ -33,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask platformLayer;
     private float castDistance = 0.95f;
     int PLAYER_LAYER = 0;
-    int PLATFORM_LAYER = 7; //Lo: This may change
+    int PLATFORM_LAYER = 7; //Lo: This layer may change
 
     [Header("Check Sides")]
     [SerializeField] private Vector2 sideSize;
