@@ -27,10 +27,13 @@ public class PlayerMovement : MonoBehaviour
     private float startScaleY = 1f;
     private float crouchScaleY = 0.5f;
 
-    [Header("Check Ground")]
+    [Header("Check Ground and Platform")]
     [SerializeField] private Vector2 boxSize;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask platformLayer;
     private float castDistance = 0.95f;
+    int PLAYER_LAYER = 0;
+    int PLATFORM_LAYER = 7; //Lo: This may change
 
     [Header("Check Sides")]
     [SerializeField] private Vector2 sideSize;
@@ -51,7 +54,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(jumpKey) && IsGrounded()) //Jump
+        if (Input.GetKey(crouchKey) && Input.GetKeyDown(jumpKey) && IsGrounded(platformLayer)) //Jump down from platform
+        {
+            Physics2D.IgnoreLayerCollision(PLAYER_LAYER, PLATFORM_LAYER, true); //Disable platform collision
+        }
+
+         else if (Input.GetKeyDown(jumpKey) && (IsGrounded(groundLayer) || IsGrounded(platformLayer))) //Jump
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
@@ -87,10 +95,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public bool IsGrounded()
+    public bool IsGrounded(LayerMask layer)
     {
-        if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer)) { return true; }
-        else { return false; }
+        if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, layer)) {
+            //Lo: Layer collision below might cause issues when adding grappling hook
+            Physics2D.IgnoreLayerCollision(PLAYER_LAYER, PLATFORM_LAYER, false); //When player touches the ground, enable platform collision again
+            return true;
+        }
+        return false;
     }
 
     public bool blockedOnSide(Vector2 transformDirection)
