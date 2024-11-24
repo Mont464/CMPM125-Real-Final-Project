@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="48" height="32" tilewidth="8" tileheight="8" infinite="0" nextlayerid="2" nextobjectid="1">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="48" height="32" tilewidth="8" tileheight="8" infinite="0" nextlayerid="5" nextobjectid="9">
  <tileset firstgid="1" name="environmentTileset" tilewidth="8" tileheight="8" tilecount="4096" columns="64">
   <image source="tiles.png" width="512" height="512"/>
   <tile id="0">
@@ -3042,21 +3042,2087 @@
     <object id="1" x="0" y="0" width="8" height="8"/>
    </objectgroup>
   </tile>
+  <tile id="2048">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2049">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2050">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2051">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2052">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2057">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2058">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2059">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2060">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2061">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2062">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2063">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2064">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2065">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2066">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2067">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2068">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2069">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2070">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2112">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2113">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2114">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2115">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2116">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2121">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2122">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2123">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2124">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2125">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2126">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2127">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2128">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2129">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2130">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2131">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2132">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2133">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2134">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2176">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2177">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2178">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2179">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2180">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2185">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2186">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2187">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2188">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2189">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2190">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2191">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2192">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2193">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2194">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2195">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2196">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2197">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2198">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2249">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2250">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2251">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2252">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2253">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2254">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2255">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2256">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2257">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2258">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2259">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2260">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2261">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2262">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2313">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2314">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2315">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2316">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2317">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2318">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2319">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2320">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2321">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2322">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2323">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2324">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2325">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2326">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2377">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2378">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2379">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2380">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2381">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2382">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2383">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2384">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2385">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2386">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2387">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2388">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2389">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2390">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2441">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2442">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2443">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2444">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2445">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2446">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2447">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2448">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2449">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2450">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2451">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2452">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2453">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2454">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2505">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2506">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2507">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2508">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2509">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2510">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2511">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2512">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2513">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2514">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2515">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2516">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2517">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2518">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2569">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2570">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2571">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2572">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2573">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2574">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2575">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2576">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2577">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2578">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2579">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2580">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2581">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2582">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2633">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2634">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2635">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2636">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2637">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2638">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2639">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2640">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2641">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2642">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2643">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2644">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2645">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2646">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2697">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2698">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2699">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2700">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2701">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2702">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2703">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2704">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2705">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2706">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2707">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2708">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2709">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2710">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2761">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2762">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2763">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2764">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2765">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2766">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2767">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2768">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2769">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2770">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2771">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2772">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2773">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2774">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2829">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2830">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2831">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2832">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2833">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2834">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2835">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2836">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2837">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2838">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2893">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2894">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2895">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2896">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2897">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2898">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2899">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2900">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2901">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="2902">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3072">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3073">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3074">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3075">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3076">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3081">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3082">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3083">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3084">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3085">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3086">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3087">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3088">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3089">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3090">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3091">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3092">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3093">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3094">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3136">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3137">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3138">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3139">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3140">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3145">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3146">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3147">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3148">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3149">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3150">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3151">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3152">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3153">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3154">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3155">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3156">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3157">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3158">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3200">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3201">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3202">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3203">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3204">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3209">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3210">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3211">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3212">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3213">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3214">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3215">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3216">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3217">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3218">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3219">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3220">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3221">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3222">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3273">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3274">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3275">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3276">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3277">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3278">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3279">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3280">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3281">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3282">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3283">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3284">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3285">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3286">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3337">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3338">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3339">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3340">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3341">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3342">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3343">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3344">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3345">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3346">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3347">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3348">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3349">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3350">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3401">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3402">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3403">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3404">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3405">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3406">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3407">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3408">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3409">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3410">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3411">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3412">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3413">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3414">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3465">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3466">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3467">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3468">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3469">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3470">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3471">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3472">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3473">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3474">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3475">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3476">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3477">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3478">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3529">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3530">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3531">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3532">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3533">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3534">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3535">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3536">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3537">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3538">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3539">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3540">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3541">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3542">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3593">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3594">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3595">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3596">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3597">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3598">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3599">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3600">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3601">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3602">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3603">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3604">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3605">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3606">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3657">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3658">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3659">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3660">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3661">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3662">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3663">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3664">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3665">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3666">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3667">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3668">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3669">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3670">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3721">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3722">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3723">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3724">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3725">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3726">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3727">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3728">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3729">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3730">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3731">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3732">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3733">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3734">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3785">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3786">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3787">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3788">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3789">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3790">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3791">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3792">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3793">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3794">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3795">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3796">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3797">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3798">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3853">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3854">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3855">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3856">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3857">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3858">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3859">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3860">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3861">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3862">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3917">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3918">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3919">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3920">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3921">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3922">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3923">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3924">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3925">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+  <tile id="3926">
+   <objectgroup>
+    <object id="1" x="0" y="0" width="8" height="8"/>
+   </objectgroup>
+  </tile>
  </tileset>
- <layer id="1" name="Tile Layer 1" width="48" height="32">
+ <layer id="4" name="Background" width="48" height="32">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="1" name="Foreground" width="48" height="32">
   <data encoding="csv">
 18,19,268,269,268,269,268,269,268,269,268,269,268,269,268,269,268,268,268,268,268,268,268,268,268,268,268,268,268,268,268,269,268,268,268,268,268,268,268,269,268,268,268,268,268,269,20,21,
-82,83,332,333,332,333,332,333,332,333,332,333,332,333,332,333,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,333,332,332,332,332,332,332,332,333,332,332,332,332,332,333,84,85,
-142,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
-142,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
-142,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
-142,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
-206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
-206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
-206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
-206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,203,
-206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
-206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,203,
+82,83,332,333,332,333,332,333,332,333,332,333,332,333,332,333,332,5,2114,2114,4,332,332,332,332,332,332,332,332,332,332,333,332,332,332,332,332,332,332,333,332,332,332,332,332,333,84,85,
+142,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2122,2114,2318,2127,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
+142,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2186,2114,2318,2191,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
+142,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2250,2114,2114,2255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
+142,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2314,2315,2114,2319,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
+206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2378,2318,2315,2383,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
+206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2122,2123,2114,2127,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
+206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2186,2114,2114,2191,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
+206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2250,2114,2315,2255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,203,
+206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2378,2053,2052,2179,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
+206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2177,2179,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,203,
 206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
 206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,203,
 206,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,139,
@@ -3079,4 +5145,51 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,204,204,204,204,205,77,204,205,76,77,76,77,76,77,76,77,76,77,212,213
 </data>
  </layer>
+ <layer id="2" name="Platforms" width="48" height="32">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1156,1156,1156,1156,1156,1156,1156,1156,1156,1156,1156,1156,1156,1156,1156,1156,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="Objects">
+  <object id="1" name="PlayerSpawn" x="40" y="128">
+   <point/>
+  </object>
+  <object id="4" name="Door" x="152" y="128">
+   <point/>
+  </object>
+  <object id="6" name="Box" x="208" y="128">
+   <point/>
+  </object>
+ </objectgroup>
 </map>
