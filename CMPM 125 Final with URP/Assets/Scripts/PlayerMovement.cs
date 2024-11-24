@@ -7,8 +7,7 @@ using UnityEngine;
 //Crouch code found at: https://www.youtube.com/watch?v=xCxSjgYTw9c
 //IsGrounded code found at: https://www.youtube.com/watch?v=P_6W-36QfLA
 //Attack code found at: https://www.youtube.com/watch?v=rwO3TE1G3ag
-
-//Lo: Once platforms are added, attach PlatForm Effector 2D for player to pass through
+//Platform effector code found at: https://www.youtube.com/watch?v=Lyeb7c0-R8c
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -34,8 +33,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask platformLayer;
     private float castDistance = 0.95f;
-    int PLAYER_LAYER = 0;
-    int PLATFORM_LAYER = 7; //Lo: This layer may change
+    private Collider2D _collider;
 
     [Header("Check Sides")]
     [SerializeField] private Vector2 sideSize;
@@ -46,6 +44,10 @@ public class PlayerMovement : MonoBehaviour
     public float radius;
     public LayerMask enemies;
 
+    private void Start()
+    {
+        _collider = GetComponent<Collider2D>();
+    }
 
     private void Awake()
     {
@@ -58,7 +60,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(crouchKey) && Input.GetKeyDown(jumpKey) && IsGrounded(platformLayer)) //Jump down from platform
         {
-            Physics2D.IgnoreLayerCollision(PLAYER_LAYER, PLATFORM_LAYER, true); //Disable platform collision
+            _collider.enabled = false; //Lo: Disabling the player collider may make them temporarily invincible
+            StartCoroutine(EnableCollider());
         }
 
          else if (Input.GetKeyDown(jumpKey) && (IsGrounded(groundLayer) || IsGrounded(platformLayer))) //Jump
@@ -97,11 +100,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private IEnumerator EnableCollider()
+    {
+        yield return new WaitForSeconds(0.5f);
+        _collider.enabled = true;
+    }
+
     public bool IsGrounded(LayerMask layer)
     {
         if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, layer)) {
-            //Lo: Layer collision below might cause issues when adding grappling hook
-            Physics2D.IgnoreLayerCollision(PLAYER_LAYER, PLATFORM_LAYER, false); //When player touches the ground, enable platform collision again
             return true;
         }
         return false;
