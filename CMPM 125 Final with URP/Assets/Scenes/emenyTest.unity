@@ -262,6 +262,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8676526469097681125, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
   m_PrefabInstance: {fileID: 8658657256708170911}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &680277510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680277511}
+  m_Layer: 0
+  m_Name: attackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680277511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680277510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.18, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1985724609}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &727644860
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268227776}
   - component: {fileID: 1268227777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,6 +878,12 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  sideSize: {x: 0, y: 0}
+  attackPoint: {fileID: 680277510}
+  radius: 0.7
+  enemies:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!70 &1985724606
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -973,7 +1010,8 @@ Transform:
   m_LocalPosition: {x: 1.96, y: 3.1199996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 680277511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2056295981
@@ -1132,6 +1170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1136133540839068133, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1445914482759675693, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
       propertyPath: m_LocalScale.x
       value: 7.6984887
@@ -1144,9 +1186,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 8.72
       objectReference: {fileID: 0}
+    - target: {fileID: 3175948201601007399, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5141320900386624633, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
       propertyPath: m_Name
       value: Vision
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141320900386624633, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6331385765730818863, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
       propertyPath: runSpeed

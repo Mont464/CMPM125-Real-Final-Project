@@ -16,7 +16,8 @@ public class EnemyAI : MonoBehaviour
     public float suspicionTimer = 3f; // Time needed to start chasing player
     public float flipInterval = 2f;
     public float chaseTimer;
-    public int stunTimer;
+    public float stunTimer;
+    public bool isStunned;
     
 
     public enemyVision vision;
@@ -28,7 +29,7 @@ public class EnemyAI : MonoBehaviour
     private float timer;
     private float flipTimer;
     private Transform player;
-    public enum State { Patrolling, Searching, Chasing, Tracking }
+    public enum State { Patrolling, Searching, Chasing, Tracking, Stunning }
     public State currentState = State.Patrolling;
     private Rigidbody2D rb;
 
@@ -60,6 +61,9 @@ public class EnemyAI : MonoBehaviour
             case State.Tracking:
                 Track();
                 break;
+            case State.Stunning:
+                Stunned();
+                break;
         }
     }
 
@@ -85,7 +89,7 @@ public class EnemyAI : MonoBehaviour
         }
         if (Vector2.Distance(transform.position, player.position) <= catchRange)
         {
-            player.position = playerStartPoint;
+            //player.position = playerStartPoint;
             Debug.Log("Player caught!");
         }
     }
@@ -176,6 +180,29 @@ public class EnemyAI : MonoBehaviour
             Debug.Log("Player caught!");        // Could add player respawn in future development
         }
 
+    }
+
+    void Stunned()
+    {
+        rb.velocity = Vector2.zero; // Stop enemy movement while stunned
+
+        stunTimer -= Time.deltaTime; // Decrement stun timer
+        if (stunTimer <= 0)
+        {
+            isStunned = false;         // Enemy is no longer stunned
+            stunTimer = 0;             // Reset the timer
+            currentState = State.Patrolling; // Transition back to patrolling
+        }
+    }
+
+    public void GetStunned(float stunDuration)
+    {
+        if (currentState == State.Searching || currentState == State.Tracking || currentState == State.Patrolling)
+        {
+            currentState = State.Stunning; // Change state to Stunned
+            stunTimer = stunDuration;     // Set the timer
+            isStunned = true;             // Enemy is now stunned
+        }
     }
 
     // Function that use for enemy move to target (player)
