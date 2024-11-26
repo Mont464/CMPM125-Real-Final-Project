@@ -97,7 +97,6 @@ public class EnemyAI : MonoBehaviour
 
     void Search()
     {
-        setTarget(player);
         MoveTowards(enemyTarget, walkSpeed);
         FlipTowards(enemyTarget);
         if (vision.playerInVision)
