@@ -23,6 +23,7 @@ public class EnemyAI : MonoBehaviour
     public enemyVision vision;
     public Transform[] waypoints; // Waypoints for patrolling
 
+    public Vector2 enemyTarget;
     private Vector2 playerStartPoint;   // store the start point, could be modify during the future develop
     private int currentWaypoint = 0;
     private int flipCount;
@@ -71,6 +72,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (vision.playerInVision)
         {
+            setTarget(player);
             currentState = State.Searching;
             return;
         }
@@ -90,16 +92,17 @@ public class EnemyAI : MonoBehaviour
         if (Vector2.Distance(transform.position, player.position) <= catchRange)
         {
             //player.position = playerStartPoint;
-            Debug.Log("Player caught!");
         }
     }
 
     void Search()
     {
-        MoveTowards(player.position, walkSpeed);
-        FlipTowards(player.position);
+        setTarget(player);
+        MoveTowards(enemyTarget, walkSpeed);
+        FlipTowards(enemyTarget);
         if (vision.playerInVision)
         {
+            setTarget(player);
             // If the player is in vision, reset timers and check for chasing
             chaseTimer -= Time.deltaTime;
             if (chaseTimer <= 0)
@@ -121,7 +124,7 @@ public class EnemyAI : MonoBehaviour
                 currentState = State.Tracking;
             }
         }
-        if (Vector2.Distance(transform.position, player.position) <= catchRange)
+        if (Vector2.Distance(transform.position, enemyTarget) <= catchRange)
         {
             Debug.Log("Player caught!");        // Could add player respawn in future development
         }
@@ -195,6 +198,20 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void setTarget (Transform newTarget)
+    {
+        if(currentState == State.Searching && vision.playerInVision == true) {
+            enemyTarget = new Vector2(newTarget.position.x, newTarget.position.y);
+        }
+        if (currentState != State.Chasing && !vision.playerInVision)
+        {
+            enemyTarget = new Vector2(newTarget.position.x, transform.position.y);
+            if (currentState == State.Patrolling)
+            {
+                currentState = State.Searching;
+            }
+        }
+    }
     public void GetStunned(float stunDuration)
     {
         if (currentState == State.Searching || currentState == State.Tracking || currentState == State.Patrolling)
