@@ -9,6 +9,8 @@ using UnityEngine;
 //Attack code found at: https://www.youtube.com/watch?v=rwO3TE1G3ag
 //Platform effector code found at: https://www.youtube.com/watch?v=Lyeb7c0-R8c
 
+//Lo (TODO): Split up into different scripts after object interaction is complete
+
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
@@ -23,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private KeyCode jumpKey = KeyCode.Space;
     private KeyCode crouchKey = KeyCode.S;
     private KeyCode attackKey = KeyCode.J;
+    private KeyCode interactKey = KeyCode.E;
 
     [Header("Player Size")]
     private float startScaleY = 1f;
@@ -33,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask platformLayer;
     private float castDistance = 0.95f;
-    private Collider2D _collider;
+    private Collider2D _playerCollider;
 
     [Header("Check Sides")]
     [SerializeField] private Vector2 sideSize;
@@ -41,12 +44,17 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Attack")]
     public GameObject attackPoint;
-    public float radius;
+    public float attackRadius;
     public LayerMask enemies;
+
+    [Header("Interact")]
+    public GameObject interactPoint;
+    public float interactRadius;
+    public LayerMask objects;
 
     private void Start()
     {
-        _collider = GetComponent<Collider2D>();
+        _playerCollider = GetComponent<Collider2D>();
     }
 
     private void Awake()
@@ -60,11 +68,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(crouchKey) && Input.GetKeyDown(jumpKey) && IsGrounded(platformLayer)) //Jump down from platform
         {
-            _collider.enabled = false; //Lo: Disabling the player collider may make them temporarily invincible
+            _playerCollider.enabled = false; //Lo: Disabling the player collider may make them temporarily invincible
             StartCoroutine(EnableCollider());
-        }
-
-         else if (Input.GetKeyDown(jumpKey) && (IsGrounded(groundLayer) || IsGrounded(platformLayer))) //Jump
+        } else if (Input.GetKeyDown(jumpKey) && (IsGrounded(groundLayer) || IsGrounded(platformLayer))) //Jump
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
@@ -76,9 +82,7 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = crouchSpeed;
 
             sideSize = sideSize / 2f;
-        }
-
-        if (Input.GetKeyUp(crouchKey)) //Crouch released
+        } else if (Input.GetKeyUp(crouchKey)) //Crouch released
         {
             transform.localScale = new Vector2(transform.localScale.x, startScaleY);
             moveSpeed = walkSpeed;
@@ -89,6 +93,9 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(attackKey))
         {
             Attack();
+        } else if(Input.GetKeyDown(interactKey))
+        {
+            Interact();
         }
     }
 
@@ -103,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator EnableCollider()
     {
         yield return new WaitForSeconds(0.5f);
-        _collider.enabled = true;
+        _playerCollider.enabled = true;
     }
 
     public bool IsGrounded(LayerMask layer)
@@ -125,20 +132,35 @@ public class PlayerMovement : MonoBehaviour
 
     public void Attack()
     {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, enemies);
         foreach (Collider2D enemyGameObject in enemy)
         {
             //UnityEngine.Debug.Log("Hit enemy"); //Test attack
         }
     }
 
+    public void Interact()
+    {
+        Collider2D[] obj = Physics2D.OverlapCircleAll(interactPoint.transform.position, interactRadius, objects);
+        foreach(Collider2D objGameObject in obj)
+        {
+            if(objGameObject.gameObject.name == "Door")
+            {
+                objGameObject.gameObject.GetComponent<DoorController>().CheckDoor();
+            } else if(objGameObject.gameObject.name == "Box") //Add while loop to check for holding down key
+            {
+
+            }
+        }
+    }
+
     private void OnDrawGizmos() //Testing
     {
-
-        Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast
-        Gizmos.DrawWireCube(transform.position + transform.right * sideCastDistance, sideSize); //Display BoxCast
-        Gizmos.DrawWireCube(transform.position - transform.right * sideCastDistance, sideSize); //Display BoxCast
+        //Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast
+        //Gizmos.DrawWireCube(transform.position + transform.right * sideCastDistance, sideSize); //Display BoxCast
+        //Gizmos.DrawWireCube(transform.position - transform.right * sideCastDistance, sideSize); //Display BoxCast
         //Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast for IsGrounded
-        //Gizmos.DrawWireSphere(attackPoint.transform.position, radius); //Display attack radius
+        //Gizmos.DrawWireSphere(attackPoint.transform.position, attackRadius); //Display attack radius
+        Gizmos.DrawWireSphere(interactPoint.transform.position, interactRadius); //Display interact radius
     }
 }
