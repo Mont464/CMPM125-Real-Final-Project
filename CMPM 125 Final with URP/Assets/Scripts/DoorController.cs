@@ -14,14 +14,12 @@ public class DoorController : MonoBehaviour
 
     private void CloseDoor()
     {
-        UnityEngine.Debug.Log("DOOR CLOSED");
         gameObject.transform.position = new Vector2(gameObject.transform.position.x, (gameObject.transform.position.y - 2.0f));
         IsOpen = false;
     }
 
     private void OpenDoor()
     {
-        UnityEngine.Debug.Log("DOOR OPENED");
         gameObject.transform.position = new Vector2(gameObject.transform.position.x, (gameObject.transform.position.y + 2.0f));
         IsOpen = true;
     }

@@ -75,19 +75,12 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
 
-        if (Input.GetKeyDown(crouchKey)) //Crouch
+        if (Input.GetKeyDown(crouchKey))
         {
-            transform.localScale = new Vector2(transform.localScale.x, crouchScaleY);
-            rb.AddForce(Vector2.down * 5f, ForceMode2D.Impulse);
-            moveSpeed = crouchSpeed;
-
-            sideSize = sideSize / 2f;
-        } else if (Input.GetKeyUp(crouchKey)) //Crouch released
+            Crouch(false);
+        } else if (Input.GetKeyUp(crouchKey))
         {
-            transform.localScale = new Vector2(transform.localScale.x, startScaleY);
-            moveSpeed = walkSpeed;
-
-            sideSize = sideSize * 2f;
+            Crouch(true);
         }
 
         if(Input.GetKeyDown(attackKey))
@@ -113,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         _playerCollider.enabled = true;
     }
 
-    public bool IsGrounded(LayerMask layer)
+    private bool IsGrounded(LayerMask layer)
     {
         if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, layer)) {
             return true;
@@ -130,12 +123,31 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
 
-    public void Attack()
+    private void Attack()
     {
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, enemies);
         foreach (Collider2D enemyGameObject in enemy)
         {
             //UnityEngine.Debug.Log("Hit enemy"); //Test attack
+        }
+    }
+
+    private void Crouch(bool isCrouched)
+    {
+        if (isCrouched)  //Crouch released
+        {
+            transform.localScale = new Vector2(transform.localScale.x, startScaleY);
+            moveSpeed = walkSpeed;
+
+            sideSize = sideSize * 2f;
+        }
+        else   //Crouch
+        {
+            transform.localScale = new Vector2(transform.localScale.x, crouchScaleY);
+            rb.AddForce(Vector2.down * 5f, ForceMode2D.Impulse);
+            moveSpeed = crouchSpeed;
+
+            sideSize = sideSize / 2f;
         }
     }
 
@@ -147,9 +159,9 @@ public class PlayerMovement : MonoBehaviour
             if(objGameObject.gameObject.name == "Door")
             {
                 objGameObject.gameObject.GetComponent<DoorController>().CheckDoor();
-            } else if(objGameObject.gameObject.name == "Box") //Add while loop to check for holding down key
+            } else if(objGameObject.gameObject.name == "Box") //Add check for if key is held down
             {
-
+                UnityEngine.Debug.Log("HIDING BEHIND BOX");
             }
         }
     }
