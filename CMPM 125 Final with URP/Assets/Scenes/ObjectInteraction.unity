@@ -889,16 +889,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   sideSize: {x: 0.2, y: 1.7}
-  attackPoint: {fileID: 0}
-  attackRadius: 0
-  enemies:
-    serializedVersion: 2
-    m_Bits: 512
-  interactPoint: {fileID: 249326166}
-  interactRadius: 1.2
-  objects:
-    serializedVersion: 2
-    m_Bits: 1024
+  isCrouched: 0
 --- !u!70 &1192336315
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1041,7 +1032,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec381237e42462040a731e8f9ac4e958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isHidden: 0
+  attackPoint: {fileID: 0}
+  attackRadius: 0
+  enemies:
+    serializedVersion: 2
+    m_Bits: 0
+  interactPoint: {fileID: 249326166}
+  interactRadius: 1.2
+  objects:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1001 &1751812064
 PrefabInstance:
   m_ObjectHideFlags: 0

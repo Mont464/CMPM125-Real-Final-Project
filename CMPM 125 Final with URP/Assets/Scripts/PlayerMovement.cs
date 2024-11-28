@@ -6,10 +6,7 @@ using UnityEngine;
 
 //Crouch code found at: https://www.youtube.com/watch?v=xCxSjgYTw9c
 //IsGrounded code found at: https://www.youtube.com/watch?v=P_6W-36QfLA
-//Attack code found at: https://www.youtube.com/watch?v=rwO3TE1G3ag
 //Platform effector code found at: https://www.youtube.com/watch?v=Lyeb7c0-R8c
-
-//Lo (TODO): Split up into different scripts after object interaction is complete
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -24,8 +21,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Keybinds")]
     private KeyCode jumpKey = KeyCode.Space;
     private KeyCode crouchKey = KeyCode.S;
-    private KeyCode attackKey = KeyCode.J;
-    private KeyCode interactKey = KeyCode.E;
 
     [Header("Player Size")]
     private float startScaleY = 1f;
@@ -42,15 +37,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 sideSize;
     private float sideCastDistance = 0.6f;
 
-    [Header("Attack")]
-    public GameObject attackPoint;
-    public float attackRadius;
-    public LayerMask enemies;
+    [Header("Crouch")]
+    public bool isCrouched = false;
 
-    [Header("Interact")]
-    public GameObject interactPoint;
-    public float interactRadius;
-    public LayerMask objects;
 
     private void Start()
     {
@@ -74,21 +63,12 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
-
         if (Input.GetKeyDown(crouchKey))
         {
-            Crouch(false);
+            Crouch();
         } else if (Input.GetKeyUp(crouchKey))
         {
-            Crouch(true);
-        }
-
-        if(Input.GetKeyDown(attackKey))
-        {
-            Attack();
-        } else if(Input.GetKeyDown(interactKey))
-        {
-            Interact();
+            Crouch();
         }
     }
 
@@ -123,16 +103,7 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
 
-    private void Attack()
-    {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, enemies);
-        foreach (Collider2D enemyGameObject in enemy)
-        {
-            //UnityEngine.Debug.Log("Hit enemy"); //Test attack
-        }
-    }
-
-    private void Crouch(bool isCrouched)
+    public void Crouch()
     {
         if (isCrouched)  //Crouch released
         {
@@ -140,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = walkSpeed;
 
             sideSize = sideSize * 2f;
+            isCrouched = false;
         }
         else   //Crouch
         {
@@ -148,21 +120,7 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = crouchSpeed;
 
             sideSize = sideSize / 2f;
-        }
-    }
-
-    public void Interact()
-    {
-        Collider2D[] obj = Physics2D.OverlapCircleAll(interactPoint.transform.position, interactRadius, objects);
-        foreach(Collider2D objGameObject in obj)
-        {
-            if(objGameObject.gameObject.name == "Door")
-            {
-                objGameObject.gameObject.GetComponent<DoorController>().CheckDoor();
-            } else if(objGameObject.gameObject.name == "Box") //Add check for if key is held down
-            {
-                UnityEngine.Debug.Log("HIDING BEHIND BOX");
-            }
+            isCrouched = true;
         }
     }
 
@@ -172,7 +130,5 @@ public class PlayerMovement : MonoBehaviour
         //Gizmos.DrawWireCube(transform.position + transform.right * sideCastDistance, sideSize); //Display BoxCast
         //Gizmos.DrawWireCube(transform.position - transform.right * sideCastDistance, sideSize); //Display BoxCast
         //Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast for IsGrounded
-        //Gizmos.DrawWireSphere(attackPoint.transform.position, attackRadius); //Display attack radius
-        Gizmos.DrawWireSphere(interactPoint.transform.position, interactRadius); //Display interact radius
     }
 }
