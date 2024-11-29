@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//from Muddy Wolf's tutorial on making a grapple hook: https://www.youtube.com/watch?v=idiq5WjCAD8
+//from Muddy Wolf's tutorial on making a grapple hook: https://www.youtube.com/watch?v=idiq5WjCAD8 , https://github.com/TylerPottsDev/yt-unity-2d-topdown-grapple/blob/master/Assets/GrappleHook.cs
 public class GrappleHook : MonoBehaviour
 {
     LineRenderer line;
@@ -49,6 +49,7 @@ public class GrappleHook : MonoBehaviour
             {
                 retracting = false;
                 playerRigid.gravityScale = 1.5f;
+                GetComponent<PlayerMovement>().enabled = true;
                 isGrappling = false;
                 line.enabled = false;
             }
@@ -69,6 +70,7 @@ public class GrappleHook : MonoBehaviour
             line.positionCount = 2;
             playerRigid.gravityScale = 0;
             playerRigid.velocity = Vector3.zero;
+            GetComponent<PlayerMovement>().enabled = false;
             StartCoroutine(Grapple());
         }
     }
