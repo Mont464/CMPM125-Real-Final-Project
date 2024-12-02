@@ -14,10 +14,11 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Platform
   - Ground
   - Enemy
   - Player
+  - Object
   - 
   - 
   - 
