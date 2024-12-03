@@ -7,14 +7,6 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "Idle 1": {
-    "frame": { "x": 32, "y": 0, "w": 32, "h": 32 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
-    "sourceSize": { "w": 32, "h": 32 },
-    "duration": 100
-   },
    "Notice 0": {
     "frame": { "x": 0, "y": 32, "w": 32, "h": 32 },
     "rotated": false,
@@ -149,7 +141,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
     "sourceSize": { "w": 32, "h": 32 },
-    "duration": 1000
+    "duration": 100
    },
    "Stunned 1": {
     "frame": { "x": 32, "y": 96, "w": 32, "h": 32 },
@@ -223,14 +215,6 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "Stunned 10": {
-    "frame": { "x": 320, "y": 96, "w": 32, "h": 32 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
-    "sourceSize": { "w": 32, "h": 32 },
-    "duration": 100
-   },
    "Run 0": {
     "frame": { "x": 0, "y": 128, "w": 32, "h": 32 },
     "rotated": false,
@@ -285,14 +269,14 @@
   "version": "1.3.7-dev",
   "image": "guardAnims.png",
   "format": "RGBA8888",
-  "size": { "w": 352, "h": 160 },
+  "size": { "w": 320, "h": 160 },
   "scale": "1",
   "frameTags": [
-   { "name": "Idle", "from": 1, "to": 2, "direction": "forward", "color": "#000000ff" },
-   { "name": "Notice", "from": 3, "to": 10, "direction": "forward", "color": "#000000ff" },
-   { "name": "Walk", "from": 11, "to": 18, "direction": "forward", "color": "#000000ff" },
-   { "name": "Stunned", "from": 21, "to": 31, "direction": "forward", "color": "#000000ff" },
-   { "name": "Run", "from": 33, "to": 38, "direction": "forward", "color": "#000000ff" }
+   { "name": "Idle", "from": 1, "to": 1, "direction": "forward", "color": "#000000ff" },
+   { "name": "Notice", "from": 2, "to": 9, "direction": "forward", "color": "#000000ff" },
+   { "name": "Walk", "from": 10, "to": 17, "direction": "forward", "color": "#000000ff" },
+   { "name": "Stunned", "from": 20, "to": 29, "direction": "forward", "color": "#000000ff" },
+   { "name": "Run", "from": 31, "to": 36, "direction": "forward", "color": "#000000ff" }
   ]
  }
 }
