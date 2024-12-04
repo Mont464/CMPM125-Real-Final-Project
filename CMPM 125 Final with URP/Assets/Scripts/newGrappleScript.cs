@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,7 @@ public class GrappleHook : MonoBehaviour
     [SerializeField] float grappleShootSpeed = 40f;
     float endLength = 0.5f;
     Vector3 direction;
-
+    [SerializeField] GameObject grappleEnd;
     bool isGrappling = false;
     [HideInInspector] public bool retracting = false;
 
@@ -24,6 +25,7 @@ public class GrappleHook : MonoBehaviour
     {
         line = GetComponent<LineRenderer>();
         playerRigid = GetComponent<Rigidbody2D>();
+        grappleEnd.SetActive(false);
     }
 
     private void Update()
@@ -52,6 +54,7 @@ public class GrappleHook : MonoBehaviour
                 GetComponent<PlayerMovement>().enabled = true;
                 isGrappling = false;
                 line.enabled = false;
+                grappleEnd.SetActive(false);
             }
         }
     }
@@ -71,6 +74,7 @@ public class GrappleHook : MonoBehaviour
             playerRigid.gravityScale = 0;       //make sure player does not fall during grapple
             playerRigid.velocity = Vector3.zero;//stop player momentum
             GetComponent<PlayerMovement>().enabled = false; //make player unable to do normal movement during grapple
+            grappleEnd.SetActive(true);
             StartCoroutine(Grapple());
         }
     }
@@ -81,18 +85,22 @@ public class GrappleHook : MonoBehaviour
         {
             endLength = 0.6f;
             direction = -transform.right;
+            grappleEnd.transform.eulerAngles = new Vector3(0, 180, 0);
         }
         if (Input.GetKey(KeyCode.D))
         {
             endLength = 0.6f;
             direction = transform.right;
-            
+            grappleEnd.transform.eulerAngles = new Vector3(0, 0, 0);
+
         }
         if (Input.GetKey(KeyCode.W))
         {
             endLength = 1.1f;
             direction = transform.up;
+            grappleEnd.transform.eulerAngles = new Vector3(0, 0, 90);
         }
+        //Debug.Log(grappleEnd.transform.up);
     }
 
     IEnumerator Grapple()
@@ -111,10 +119,12 @@ public class GrappleHook : MonoBehaviour
             newPos = Vector2.Lerp(transform.position, target, t / time);
             line.SetPosition(0, transform.position);
             line.SetPosition(1, newPos);
+            grappleEnd.transform.position = newPos;
             yield return null;
         }
 
         line.SetPosition(1, target);
+        grappleEnd.transform.position = target;
         retracting = true; //end point reached, begin retract
     }
 }
