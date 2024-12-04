@@ -85,6 +85,10 @@ public class PlayerHide : MonoBehaviour
             {
                 gameObject.GetComponent<PlayerHide>().Hide(objGameObject.transform.position);
             }
+            else if (objGameObject.gameObject.tag == "Objective")
+            {
+                gameObject.GetComponent<ObjectiveHandler>().completeObjective(objGameObject.gameObject);
+            }
         }
     }
 
