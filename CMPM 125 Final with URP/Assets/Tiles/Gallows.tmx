@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="8" tileheight="8" infinite="0" nextlayerid="4" nextobjectid="4">
- <tileset firstgid="1" source="tiles.tsx"/>
- <tileset firstgid="4097" name="bgTiles" tilewidth="8" tileheight="8" tilecount="4096" columns="64">
-  <image source="bgTiles.png" width="512" height="512"/>
- </tileset>
+ <tileset firstgid="1" source="environmentTileset.tsx"/>
+ <tileset firstgid="4097" source="backgroundTileset.tsx"/>
  <layer id="2" name="Background" width="30" height="20" locked="1">
   <data encoding="csv">
 4229,4229,4229,4229,4229,4229,4228,4229,4229,4229,4229,4228,4228,4229,4229,4228,4228,4228,4228,4229,4228,4228,4228,4228,4229,4229,4228,4229,4228,4229,

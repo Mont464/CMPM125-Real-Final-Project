@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="8" tileheight="8" infinite="1" nextlayerid="5" nextobjectid="17">
- <tileset firstgid="1" source="tiles.tsx"/>
+ <tileset firstgid="1" source="environmentTileset.tsx"/>
  <layer id="1" name="Backgound" width="30" height="20" locked="1" tintcolor="#e1ad9264">
   <data encoding="csv">
    <chunk x="0" y="-32" width="16" height="16">

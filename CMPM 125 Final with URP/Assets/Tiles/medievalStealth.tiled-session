@@ -3,35 +3,82 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "testbed.tmx",
+    "activeFile": "Gallows.tmx",
     "expandedProjectPaths": [
         "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "": {
+            "scaleInDock": 1,
             "scaleInEditor": 3.2997
         },
         "#environmentTileset": {
             "scaleInDock": 1
         },
+        "Gallows.tmx": {
+            "scale": 4.413541666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 115.89332074581073,
+                "y": 83.60632523011566
+            }
+        },
+        "Level1.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1216,
+                "y": 384.66666666666663
+            }
+        },
+        "Level1.tmx#bgTiles": {
+            "scaleInDock": 1
+        },
+        "Level1.tmx#tiles": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "backgroundTileset.tsx": {
+            "scaleInDock": 1
+        },
+        "environmentTileset.tsx": {
+            "scaleInDock": 1
+        },
+        "hubMap.tmx": {
+            "scale": 2.06884765625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 244.8222799150342,
+                "y": -63.56195421288646
+            }
+        },
         "testbed.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
             "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 218.16666666666666,
-                "y": 124.33333333333334
+                "x": 201.66666666666666,
+                "y": 127.83333333333334
             }
         },
         "testbed.tmx#backgroundTileset": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "testbed.tmx#environmentTileset": {
             "scaleInDock": 1,
             "scaleInEditor": 3.2997
+        },
+        "tiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         }
     },
     "last.exportedFilePath": "C:/Users/kirae/Downloads/School/Quarter 1/CMPM 125/CMPM125-Real-Final-Project/CMPM-125-Final/Assets/Tiles",
+    "last.externalTilesetPath": "C:/Users/kirae/Downloads/School/Quarter 1/CMPM 125/CMPM125-Real-Final-Project/CMPM 125 Final with URP/Assets/Tiles",
     "last.imagePath": "C:/Users/kirae/Downloads/School/Quarter 1/CMPM 125/CMPM125-Real-Final-Project/CMPM-125-Final/Assets/Tiles",
     "map.fixedSize": false,
     "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
@@ -39,13 +86,22 @@
     "map.tileHeight": 8,
     "map.tileWidth": 8,
     "openFiles": [
-        "testbed.tmx"
+        "testbed.tmx",
+        "Level1.tmx",
+        "tiles.tsx",
+        "hubMap.tmx",
+        "Gallows.tmx"
     ],
     "project": "medievalStealth.tiled-project",
     "recentFiles": [
-        "testbed.tmx"
+        "testbed.tmx",
+        "Level1.tmx",
+        "tiles.tsx",
+        "hubMap.tmx",
+        "Gallows.tmx"
     ],
     "tileset.embedInMap": true,
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.tileSize": {
         "height": 8,
         "width": 8
