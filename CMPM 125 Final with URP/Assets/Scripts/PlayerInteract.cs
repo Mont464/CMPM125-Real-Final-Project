@@ -81,7 +81,7 @@ public class PlayerHide : MonoBehaviour
             {
                 objGameObject.gameObject.GetComponent<DoorController>().CheckDoor();
             }
-            else if (objGameObject.gameObject.name == "Crate")
+            else if (objGameObject.gameObject.name == "Crate" || objGameObject.gameObject.name == "Chest")
             {
                 gameObject.GetComponent<PlayerHide>().Hide(objGameObject.transform.position);
             }
