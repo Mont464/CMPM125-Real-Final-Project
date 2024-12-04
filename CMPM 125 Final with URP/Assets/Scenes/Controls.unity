@@ -767,16 +767,19 @@ MonoBehaviour:
   boxSize: {x: 0.9, y: 0.2}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   platformLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   sideSize: {x: 0.2, y: 1.7}
   attackPoint: {fileID: 0}
   radius: 0
   enemies:
     serializedVersion: 2
     m_Bits: 0
+  facingLeft: 0
+  distractCooldown: 5
+  isCrouched: 0
 --- !u!70 &1192336315
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -921,7 +924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grapplableMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   maxDistance: 10
   grappleSpeed: 10
   grappleShootSpeed: 40

@@ -73,19 +73,16 @@ public class PlayerMovement : MonoBehaviour
         {
             _playerCollider.enabled = false; //Lo: Disabling the player collider may make them temporarily invincible
             StartCoroutine(EnableCollider());
-        } else if (Input.GetKeyDown(jumpKey) && (IsGrounded(groundLayer) || IsGrounded(platformLayer))) //Jump
+        }
+        else if (Input.GetKeyDown(jumpKey) && (IsGrounded(groundLayer) || IsGrounded(platformLayer))) //Jump
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
         if (Input.GetKeyDown(crouchKey))
         {
-            transform.localScale = new Vector2(transform.localScale.x, crouchScaleY);
-            rb.AddForce(Vector2.down * 5f, ForceMode2D.Impulse);
-            moveSpeed = crouchSpeed;
-
-            sideSize = sideSize / 2f;
             Crouch();
-        } else if (Input.GetKeyUp(crouchKey))
+        }
+        else if (Input.GetKeyUp(crouchKey))
         {
             Crouch();
         }
@@ -95,32 +92,37 @@ public class PlayerMovement : MonoBehaviour
     {
         if ((Input.GetAxis("Horizontal") >= 0 && !blockedOnSide(transform.right)) || (Input.GetAxis("Horizontal") < 0 && !blockedOnSide(-transform.right)))
         {
+            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y); //Left and right movement
+            /*
             transform.localScale = new Vector2(transform.localScale.x, startScaleY);
             moveSpeed = walkSpeed;
 
             sideSize = sideSize * 2f;
+            */
         }
 
-        if(Input.GetKeyDown(attackKey))
+        if (Input.GetKeyDown(attackKey))
         {
             Attack();
         }
         if (Input.GetKeyDown(distractKey))
         {
-            if (distractCooldown <= 0){
+            if (distractCooldown <= 0)
+            {
                 Distract();
             }
-            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y); //Left and right movement
         }
     }
 
     private IEnumerator EnableCollider()
     {
         distractCooldown -= Time.deltaTime;
+        /*
         if ((Input.GetAxis("Horizontal") >= 0 && !blockedOnSide(transform.right)) || (Input.GetAxis("Horizontal") < 0 && !blockedOnSide(-transform.right)))
         {
             rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y); //Left and right movement
         }
+        */
         if (Input.GetAxis("Horizontal") > 0 && facingLeft) //Flip sprite
         {
             facingLeft = false;
@@ -137,7 +139,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded(LayerMask layer)
     {
-        if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, layer)) {
+        if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, layer))
+        {
             return true;
         }
         return false;
