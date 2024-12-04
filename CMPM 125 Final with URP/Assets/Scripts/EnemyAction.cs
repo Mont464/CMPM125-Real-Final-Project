@@ -3,12 +3,15 @@ using System.Collections;
 
 //https://www.youtube.com/watch?v=oD7akZVgT4I&ab_channel=MinaP%C3%AAcheux
 //https://www.youtube.com/watch?v=ptLg-J67vIU&list=PLSR2vNOypvs72jRSvOEWv448Tle9nDw1Z&index=4&ab_channel=NightRunStudio
+//https://www.youtube.com/watch?v=hkaysu1Z-N8&ab_channel=Brackeys
 //https://zzzcode.ai/
 //https://openai.com/index/chatgpt/
 //Help from my friend
 
 public class EnemyAI : MonoBehaviour
 {
+    public Animator Enemy_Animator;
+    public Animator Stun_Animator;
     public float walkSpeed = 2f;
     public float runSpeed = 4f;
     public float catchRange = 1.5f;
@@ -157,6 +160,7 @@ public class EnemyAI : MonoBehaviour
     void Track()
     {
         rb.velocity = Vector2.zero;
+        Enemy_Animator.SetFloat("Enemy_speed", 0);
 
         // Decrement the flip timer
         flipTimer -= Time.deltaTime;
@@ -187,10 +191,12 @@ public class EnemyAI : MonoBehaviour
     void Stunned()
     {
         rb.velocity = Vector2.zero; // Stop enemy movement while stunned
+        Stun_Animator.SetBool("Enemy_stun", true);
 
         stunTimer -= Time.deltaTime; // Decrement stun timer
         if (stunTimer <= 0)
         {
+            Stun_Animator.SetBool("Enemy_stun", false);
             isStunned = false;         // Enemy is no longer stunned
             stunTimer = 0;             // Reset the timer
             currentState = State.Patrolling; // Transition back to patrolling
@@ -199,16 +205,15 @@ public class EnemyAI : MonoBehaviour
 
     public void setTarget (Transform newTarget)
     {
-        if(currentState == State.Searching && vision.playerInVision == true) {
-            enemyTarget = new Vector2(newTarget.position.x, newTarget.position.y);
-        }
-        if (currentState != State.Chasing && !vision.playerInVision)
+        if (!vision.playerInVision)
         {
             enemyTarget = new Vector2(newTarget.position.x, transform.position.y);
             if (currentState == State.Patrolling)
             {
                 currentState = State.Searching;
             }
+        } else {
+            enemyTarget = new Vector2(newTarget.position.x, transform.position.y);
         }
     }
     public void GetStunned(float stunDuration)
@@ -226,6 +231,7 @@ public class EnemyAI : MonoBehaviour
     {
         Vector2 direction = (target - (Vector2)transform.position).normalized;
         rb.velocity = direction * speed;
+        Enemy_Animator.SetFloat("Enemy_speed", rb.velocity.magnitude);
     }
 
     // Function to flip the enemy to face the target (player or waypoint)
