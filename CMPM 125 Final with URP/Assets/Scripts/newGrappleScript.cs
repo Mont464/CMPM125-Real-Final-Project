@@ -33,19 +33,19 @@ public class GrappleHook : MonoBehaviour
             StartGrapple();
         }
 
-        if (retracting)
+        if (retracting) //move player towards the end point
         {
             Vector2 grapplePos = transform.position;
             if (Vector2.Distance(transform.position, target) > endLength)
             {
-                grapplePos = Vector2.Lerp(transform.position, target, grappleSpeed * Time.deltaTime);
+                grapplePos = Vector2.Lerp(transform.position, target, grappleSpeed * Time.deltaTime); 
             }
 
             transform.position = grapplePos;
 
             line.SetPosition(0, transform.position);
 
-            if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKeyDown(KeyCode.K)) //end grapple
             {
                 retracting = false;
                 playerRigid.gravityScale = 1.5f;
@@ -60,22 +60,22 @@ public class GrappleHook : MonoBehaviour
     {
         GetAimDirection();
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grapplableMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grapplableMask); // check if grapple is possible
 
         if (hit.collider != null)
         {
-            isGrappling = true;
-            target = hit.point;
+            isGrappling = true; //restrict actions available while grappling
+            target = hit.point; 
             line.enabled = true;
             line.positionCount = 2;
-            playerRigid.gravityScale = 0;
-            playerRigid.velocity = Vector3.zero;
-            GetComponent<PlayerMovement>().enabled = false;
+            playerRigid.gravityScale = 0;       //make sure player does not fall during grapple
+            playerRigid.velocity = Vector3.zero;//stop player momentum
+            GetComponent<PlayerMovement>().enabled = false; //make player unable to do normal movement during grapple
             StartCoroutine(Grapple());
         }
     }
 
-    private void GetAimDirection()
+    private void GetAimDirection() //check which way the player wants to grapple
     {
         if (Input.GetKey(KeyCode.A))
         {
@@ -100,11 +100,12 @@ public class GrappleHook : MonoBehaviour
         float t = 0;
         float time = 10;
 
+        //set initial line location
         line.SetPosition(0, transform.position);
         line.SetPosition(1, transform.position);
 
         Vector2 newPos;
-
+        //grow grapple towards the end point
         for (; t < time; t += grappleShootSpeed * Time.deltaTime)
         {
             newPos = Vector2.Lerp(transform.position, target, t / time);
@@ -114,6 +115,6 @@ public class GrappleHook : MonoBehaviour
         }
 
         line.SetPosition(1, target);
-        retracting = true;
+        retracting = true; //end point reached, begin retract
     }
 }
