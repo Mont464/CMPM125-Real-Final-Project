@@ -51,7 +51,7 @@ public class PlayerHide : MonoBehaviour
             rb.velocity = new Vector2(0, 0); //Stop player velocity
             prevPosition = transform.position; //Save player location
             gameObject.GetComponent<PlayerMovement>().Crouch();
-            transform.position = hidePosition; //Move player behind box
+            transform.position = hidePosition; //Move player behind object
             isHidden = true;
             GetComponent<PlayerMovement>().enabled = false; //Disable player movement
             
@@ -81,7 +81,7 @@ public class PlayerHide : MonoBehaviour
             {
                 objGameObject.gameObject.GetComponent<DoorController>().CheckDoor();
             }
-            else if (objGameObject.gameObject.name == "Box")
+            else if (objGameObject.gameObject.name == "Crate")
             {
                 gameObject.GetComponent<PlayerHide>().Hide(objGameObject.transform.position);
             }
@@ -94,7 +94,7 @@ public class PlayerHide : MonoBehaviour
 
     private void OnDrawGizmos() //Testing
     {
-        //Gizmos.DrawWireSphere(attackPoint.transform.position, attackRadius); //Display attack radius
+        Gizmos.DrawWireSphere(attackPoint.transform.position, attackRadius); //Display attack radius
         Gizmos.DrawWireSphere(interactPoint.transform.position, interactRadius); //Display interact radius
     }
 }

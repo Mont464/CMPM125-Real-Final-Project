@@ -14,13 +14,13 @@ public class DoorController : MonoBehaviour
 
     private void CloseDoor()
     {
-        gameObject.transform.position = new Vector2(gameObject.transform.position.x, (gameObject.transform.position.y - 2.0f));
+        gameObject.transform.position = new Vector2(gameObject.transform.position.x, (gameObject.transform.position.y - 3.2f));
         IsOpen = false;
     }
 
     private void OpenDoor()
     {
-        gameObject.transform.position = new Vector2(gameObject.transform.position.x, (gameObject.transform.position.y + 2.0f));
+        gameObject.transform.position = new Vector2(gameObject.transform.position.x, (gameObject.transform.position.y + 3.2f));
         IsOpen = true;
     }
 }

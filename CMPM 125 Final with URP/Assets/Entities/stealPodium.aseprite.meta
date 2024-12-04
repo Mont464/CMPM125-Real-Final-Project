@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6d2812d7cd989ef45b74691d26678415
+guid: 5f60da23a7ec78348b793859c514711b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: respawnCandle
+  - name: Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,9 +130,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 10
-      height: 9
-    spriteID: 21a87b04b869a434f918290bb19b9312
+      width: 14
+      height: 22
+    spriteID: 66d4036b287d65344bd8a0fcf56b51e5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,24 +141,53 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 34
+      width: 14
+      height: 22
+    spriteID: 60883c600fb764349a9d12ff8c92efd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 34}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1263755861
-    name: respawnCandle
+    guid: 333268533
+    name: stealPodium
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: respawnCandle
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 3
+        x: 9
         y: 0
-        width: 10
-        height: 9
-      spriteId: 21a87b04b869a434f918290bb19b9312
+        width: 14
+        height: 22
+      spriteId: 66d4036b287d65344bd8a0fcf56b51e5
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 0
+        width: 14
+        height: 22
+      spriteId: 60883c600fb764349a9d12ff8c92efd9
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -177,4 +206,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 16}
+  canvasSize: {x: 32, y: 32}

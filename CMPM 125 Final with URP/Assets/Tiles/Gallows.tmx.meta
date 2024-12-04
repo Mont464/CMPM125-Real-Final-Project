@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c712e4b936664d048a1dcda68df01c95
+guid: 012be064faa4c594a90ce3873aad774c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -10,16 +10,12 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
   errors: []
-  warnings:
-  - Pixels Per Unit mismatch between map (16) and tileset 'environmentTileset.tsx'
-    (100)
-  - Pixels Per Unit mismatch between map (16) and tileset 'backgroundTileset.tsx'
-    (100)
+  warnings: []
   missingSortingLayers: []
   missingLayers: []
   missingTags: []
   importerVersion: 26
-  pixelsPerUnit: 16
+  pixelsPerUnit: 100
   edgesPerEllipse: 32
   numberOfObjectsImported: 2
   tilesAsObjects: 0

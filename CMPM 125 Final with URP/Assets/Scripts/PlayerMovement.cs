@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Keybinds")]
     private KeyCode jumpKey = KeyCode.Space;
     private KeyCode crouchKey = KeyCode.S;
-    private KeyCode attackKey = KeyCode.J;
+    //private KeyCode attackKey = KeyCode.J;
     private KeyCode distractKey = KeyCode.K;
 
 
@@ -41,10 +41,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 sideSize;
     private float sideCastDistance = 0.6f;
 
+    /*
     [Header("Attack")]
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemies;
+    */
 
     [Header("Distract")]
     public bool facingLeft = false;
@@ -100,11 +102,12 @@ public class PlayerMovement : MonoBehaviour
             sideSize = sideSize * 2f;
             */
         }
-
+        /*
         if (Input.GetKeyDown(attackKey))
         {
             Attack();
         }
+        */
         if (Input.GetKeyDown(distractKey))
         {
             if (distractCooldown <= 0)
@@ -176,6 +179,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /*
     public void Attack()
     {
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
@@ -189,6 +193,7 @@ public class PlayerMovement : MonoBehaviour
             //UnityEngine.Debug.Log("Hit enemy"); //Test attack
         }
     }
+    */
 
     public void Distract()
     {
@@ -206,8 +211,6 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireCube(transform.position + transform.right * sideCastDistance, sideSize); //Display BoxCast
         Gizmos.DrawWireCube(transform.position - transform.right * sideCastDistance, sideSize); //Display BoxCast
         //Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast for IsGrounded
-        Gizmos.DrawWireSphere(attackPoint.transform.position, radius); //Display attack radius
-        //Gizmos.DrawWireSphere(attackPoint.transform.position, radius); //Display attack radius
         //Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize); //Display BoxCast
         //Gizmos.DrawWireCube(transform.position + transform.right * sideCastDistance, sideSize); //Display BoxCast
         //Gizmos.DrawWireCube(transform.position - transform.right * sideCastDistance, sideSize); //Display BoxCast

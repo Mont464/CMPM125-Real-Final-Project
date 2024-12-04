@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c712e4b936664d048a1dcda68df01c95
+guid: b46f50ac892668c49a54efd3b80737f0
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11,19 +11,17 @@ ScriptedImporter:
   missingFiles: []
   errors: []
   warnings:
-  - Pixels Per Unit mismatch between map (16) and tileset 'environmentTileset.tsx'
-    (100)
-  - Pixels Per Unit mismatch between map (16) and tileset 'backgroundTileset.tsx'
-    (100)
+  - Tileset 'bgTiles' is an embedded tileset. Exported tilesets are preferred.
   missingSortingLayers: []
   missingLayers: []
   missingTags: []
   importerVersion: 26
-  pixelsPerUnit: 16
+  pixelsPerUnit: 100
   edgesPerEllipse: 32
-  numberOfObjectsImported: 2
+  numberOfObjectsImported: 8196
   tilesAsObjects: 0
   sortingMode: 0
   isIsometric: 0
   customImporterClassName: 
-  internalTilesets: []
+  internalTilesets:
+  - {instanceID: 0}

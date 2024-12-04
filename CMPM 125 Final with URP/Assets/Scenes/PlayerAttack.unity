@@ -594,12 +594,19 @@ MonoBehaviour:
   boxSize: {x: 1.1, y: 0.2}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
+  platformLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  sideSize: {x: 0, y: 0}
   attackPoint: {fileID: 393742682}
   radius: 0.9
   enemies:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 2048
+  facingLeft: 0
+  distractCooldown: 5
+  isCrouched: 0
 --- !u!70 &1192336315
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
