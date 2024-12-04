@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="48" height="32" tilewidth="8" tileheight="8" infinite="0" nextlayerid="5" nextobjectid="9">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="48" height="32" tilewidth="8" tileheight="8" infinite="0" nextlayerid="5" nextobjectid="18">
  <tileset firstgid="1" name="environmentTileset" tilewidth="8" tileheight="8" tilecount="4096" columns="64">
   <image source="tiles.png" width="512" height="512"/>
   <tile id="0">
@@ -5192,6 +5192,21 @@
    <point/>
   </object>
   <object id="6" name="Box" x="208" y="128">
+   <point/>
+  </object>
+  <object id="10" name="Torch" x="112" y="96">
+   <point/>
+  </object>
+  <object id="11" name="Torch" x="40" y="96">
+   <point/>
+  </object>
+  <object id="12" name="Chest" x="232" y="128">
+   <point/>
+  </object>
+  <object id="14" name="Dresser" x="80" y="128">
+   <point/>
+  </object>
+  <object id="16" name="Guard" x="328" y="240">
    <point/>
   </object>
  </objectgroup>
