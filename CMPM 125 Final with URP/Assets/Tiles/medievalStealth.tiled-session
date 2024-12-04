@@ -16,12 +16,15 @@
             "scaleInDock": 1
         },
         "testbed.tmx": {
-            "scale": 2,
-            "selectedLayer": 0,
+            "scale": 3,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 361.25,
-                "y": 230
+                "x": 218.16666666666666,
+                "y": 124.33333333333334
             }
+        },
+        "testbed.tmx#backgroundTileset": {
+            "scaleInDock": 1
         },
         "testbed.tmx#environmentTileset": {
             "scaleInDock": 1,
