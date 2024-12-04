@@ -199,16 +199,15 @@ public class EnemyAI : MonoBehaviour
 
     public void setTarget (Transform newTarget)
     {
-        if(currentState == State.Searching && vision.playerInVision == true) {
-            enemyTarget = new Vector2(newTarget.position.x, newTarget.position.y);
-        }
-        if (currentState != State.Chasing && !vision.playerInVision)
+        if (!vision.playerInVision)
         {
             enemyTarget = new Vector2(newTarget.position.x, transform.position.y);
             if (currentState == State.Patrolling)
             {
                 currentState = State.Searching;
             }
+        } else {
+            enemyTarget = new Vector2(newTarget.position.x, transform.position.y);
         }
     }
     public void GetStunned(float stunDuration)

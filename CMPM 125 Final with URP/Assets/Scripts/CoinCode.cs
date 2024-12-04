@@ -55,7 +55,7 @@ public class CoinCode : MonoBehaviour
     {
         if(IsGrounded() && other.tag == "Enemy")
         {
-            //other.GetComponent<EnemyAction>.setTarget(transform);
+            other.GetComponent<EnemyAction>.setTarget(transform);
         }
     }
     public bool IsGrounded()
