@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using Unity.VisualScripting;
@@ -172,20 +173,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public bool blockedOnSide(Vector2 transformDirection)
-    {
-        if (Physics2D.BoxCast(transform.position, sideSize, 0, transformDirection, sideCastDistance, groundLayer))
-        {
-            return true;
-        }
-        return false;
-    }
-
     public void Attack()
     {
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
         foreach (Collider2D enemyGameObject in enemy)
         {
+            EnemyAI enemyAI = enemyGameObject.GetComponent<EnemyAI>();
+            if (enemyAI != null)
+            {
+                enemyAI.GetStunned(3f); // Stun the enemy for 3 seconds
+            }
             //UnityEngine.Debug.Log("Hit enemy"); //Test attack
         }
     }
@@ -197,30 +194,6 @@ public class PlayerMovement : MonoBehaviour
         // Set coin to active, set position to player attack position
         // coin.SetActive(true);
         // coin.transform.position = attackPoint.transform.position;
-    }
-
-    public bool blockedOnSide(Vector2 transformDirection)
-    {
-        if (Physics2D.BoxCast(transform.position, sideSize, 0, transformDirection, sideCastDistance, groundLayer))
-        {
-            return true;
-        }
-        return false;
-    }
-
-    public void Attack()
-    {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
-        foreach (Collider2D enemyGameObject in enemy)
-        {
-            EnemyAI enemyAI = enemyGameObject.GetComponent<EnemyAI>();
-            if (enemyAI != null)
-            {
-                enemyAI.GetStunned(3f); // Stun the enemy for 3 seconds
-            }
-
-            UnityEngine.Debug.Log("Hit enemy"); //Test attack
-        }
     }
 
     private void OnDrawGizmos() //Testing
