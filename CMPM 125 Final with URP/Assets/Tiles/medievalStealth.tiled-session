@@ -17,19 +17,19 @@
             "scaleInDock": 1
         },
         "Gallows.tmx": {
-            "scale": 4.413541666666666,
+            "scale": 3.5729,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 201.53882464007552,
-                "y": 115.10030682086382
+                "x": 125.8081670351815,
+                "y": 66.8924403145904
             }
         },
         "Level1.tmx": {
             "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1216,
-                "y": 384.66666666666663
+                "x": 1214,
+                "y": 384
             }
         },
         "Level1.tmx#bgTiles": {
@@ -46,11 +46,14 @@
             "scaleInDock": 1
         },
         "hubMap.tmx": {
-            "scale": 2.06884765625,
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 2.2425,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 244.8222799150342,
-                "y": -63.56195421288646
+                "x": 212.93199554069116,
+                "y": -63.32218506131551
             }
         },
         "testbed.tmx": {
@@ -94,9 +97,9 @@
     ],
     "project": "medievalStealth.tiled-project",
     "recentFiles": [
+        "tiles.tsx",
         "testbed.tmx",
         "Level1.tmx",
-        "tiles.tsx",
         "hubMap.tmx",
         "Gallows.tmx"
     ],
