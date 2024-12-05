@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class ObjectiveHandler : MonoBehaviour
 {
     [SerializeField] private List<GameObject> objectiveOrder;
     [SerializeField] private TextMeshProUGUI objectiveUIText;
+    [SerializeField] private Light2D objectiveLight;
     //[SerializeField] private GameObject endGate;
     // Start is called before the first frame update
     void Start()
@@ -41,17 +44,18 @@ public class ObjectiveHandler : MonoBehaviour
 
     public IEnumerator WaitBeforeNext()
     {
-        Debug.Log("reaching coroutine");
+        //Debug.Log("reaching coroutine");
         yield return new WaitForSeconds(1.5f);
         if (objectiveOrder.Count > 0)
         {
             objectiveUIText.SetText("New Objective: " + objectiveOrder[0].name);
+            objectiveLight.transform.position = objectiveOrder[0].transform.position;
         }
-
         else
         {
+            SceneManager.LoadScene(1);
             //open end gate
-            objectiveUIText.SetText("All Objectives Completed, Escape");
+            //objectiveUIText.SetText("All Objectives Completed, Escape");
         }
     }
 }

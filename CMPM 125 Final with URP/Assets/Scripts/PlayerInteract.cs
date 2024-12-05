@@ -11,6 +11,8 @@ public class PlayerHide : MonoBehaviour
 
     public Transform respawnPoint;
 
+    public Canvas canvas;
+
     [Header("Keybinds")]
     private KeyCode attackKey = KeyCode.J;
     private KeyCode interactKey = KeyCode.E;
@@ -39,8 +41,8 @@ public class PlayerHide : MonoBehaviour
 
         if (Input.GetKeyDown(attackKey))
         {
-            //Attack();
-            gameObject.transform.position = gameObject.GetComponent<PlayerHide>().respawnPoint.position;
+            Attack();
+            //gameObject.transform.position = gameObject.GetComponent<PlayerHide>().respawnPoint.position;
         }
         else if (Input.GetKeyDown(interactKey))
         {
@@ -92,7 +94,7 @@ public class PlayerHide : MonoBehaviour
             }
             else if (objGameObject.gameObject.tag == "Objective")
             {
-                gameObject.GetComponent<ObjectiveHandler>().completeObjective(objGameObject.gameObject);
+                canvas.GetComponent<ObjectiveHandler>().completeObjective(objGameObject.gameObject);
             }
             else if(objGameObject.gameObject.name == "RespawnCandle")
             {
