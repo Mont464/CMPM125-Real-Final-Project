@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalScenes/Level 1.unity
     guid: 3f7f4c4fb3153a84598e3328d992a5bd
   - enabled: 1
-    path: Assets/Scenes/FinalScenes/Game Over.unity
+    path: Assets/Scenes/FinalScenes/TitleScreen.unity
     guid: ea91a5f26e364e94e8f05fdcc8331f03
   m_configObjects: {}

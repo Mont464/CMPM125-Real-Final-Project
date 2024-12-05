@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -41,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 sideSize;
     private float sideCastDistance = 0.6f;
 
+    [Header("Animator")]
+    [SerializeField] private Animator animator;
+
     /*
     [Header("Attack")]
     public GameObject attackPoint;
@@ -59,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         _playerCollider = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -79,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetKeyDown(jumpKey) && (IsGrounded(groundLayer) || IsGrounded(platformLayer))) //Jump
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            animator.SetBool("Jumping", true);
         }
         if (Input.GetKeyDown(crouchKey))
         {
@@ -92,9 +98,35 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        float horizontalMove = Input.GetAxis("Horizontal") * moveSpeed;
+        animator.SetFloat("Moving", Mathf.Abs(horizontalMove));
+
+        float verticalMove = rb.velocity.y;
+        if (verticalMove < 0 && (!IsGrounded(groundLayer) && !IsGrounded(platformLayer)))
+        {
+            animator.SetBool("Falling", true);
+            animator.SetBool("Jumping", false);
+        }
+
+        else if ((IsGrounded(groundLayer) || IsGrounded(platformLayer)))
+        {
+            animator.SetBool("Falling", false);
+            animator.SetBool("Jumping", false);
+        }
+
         if ((Input.GetAxis("Horizontal") >= 0 && !blockedOnSide(transform.right)) || (Input.GetAxis("Horizontal") < 0 && !blockedOnSide(-transform.right)))
         {
-            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y); //Left and right movement
+            rb.velocity = new Vector2(horizontalMove, rb.velocity.y); //Left and right movement
+
+            
+            if (Input.GetAxis("Horizontal") > 0 && facingLeft)
+            {
+                Flip();
+            }
+            else if (Input.GetAxis("Horizontal") < 0 && !facingLeft)
+            {
+                Flip();
+            }
             /*
             transform.localScale = new Vector2(transform.localScale.x, startScaleY);
             moveSpeed = walkSpeed;
@@ -204,6 +236,23 @@ public class PlayerMovement : MonoBehaviour
         // Set coin to active, set position to player attack position
         // coin.SetActive(true);
         // coin.transform.position = attackPoint.transform.position;
+    }
+
+    public void Flip()
+    {
+        if (facingLeft)
+        {
+            //transform.eulerAngles = new Vector3(0, 0, 0);
+            GetComponent<SpriteRenderer>().flipX = false;
+            facingLeft = false;
+        }
+
+        else
+        {
+            //transform.eulerAngles = new Vector3(0, 180, 0);
+            GetComponent<SpriteRenderer>().flipX = true;
+            facingLeft = true;
+        }
     }
 
     private void OnDrawGizmos() //Testing
