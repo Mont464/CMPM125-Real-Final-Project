@@ -53,7 +53,7 @@ public class ObjectiveHandler : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
             //open end gate
             //objectiveUIText.SetText("All Objectives Completed, Escape");
         }

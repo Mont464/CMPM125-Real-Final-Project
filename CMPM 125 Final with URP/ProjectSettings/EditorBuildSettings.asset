@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalScenes/TitleScreen.unity
     guid: ea91a5f26e364e94e8f05fdcc8331f03
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/Win Screen.unity
+    guid: 7fab462145a9e114fb4d705d4bc83015
   m_configObjects: {}
