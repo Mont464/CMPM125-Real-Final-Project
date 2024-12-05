@@ -815,12 +815,13 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  sideSize: {x: 0, y: 0}
-  attackPoint: {fileID: 680277510}
-  radius: 0.7
-  enemies:
+  platformLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
+  sideSize: {x: 0, y: 0}
+  facingLeft: 0
+  distractCooldown: 5
+  isCrouched: 0
 --- !u!70 &1985724606
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1136,9 +1137,13 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5733584753288648934, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
+      propertyPath: m_Size.x
+      value: 0.73333335
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733584753288648934, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 959223980, guid: 94767a16d19fd0d499ae0d844d0c1f21, type: 3}
+      objectReference: {fileID: 959223980, guid: d18745d0af1b3f94fbe86197404d2e9d, type: 3}
     - target: {fileID: 5733584753288648934, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1149,6 +1154,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5733584753288648934, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733584753288648934, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6331385765730818863, guid: cca3562673f3c6749b329a350bac17dc, type: 3}
