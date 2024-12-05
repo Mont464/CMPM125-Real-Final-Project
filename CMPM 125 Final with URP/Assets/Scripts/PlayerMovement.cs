@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Keybinds")]
     private KeyCode jumpKey = KeyCode.Space;
     private KeyCode crouchKey = KeyCode.S;
-    //private KeyCode attackKey = KeyCode.J;
-    private KeyCode distractKey = KeyCode.K;
+    private KeyCode attackKey = KeyCode.J;
+    //private KeyCode distractKey = KeyCode.K;
 
 
     [Header("Player Size")]
@@ -45,12 +45,12 @@ public class PlayerMovement : MonoBehaviour
     [Header("Animator")]
     [SerializeField] private Animator animator;
 
-    /*
+    
     [Header("Attack")]
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemies;
-    */
+    
 
     [Header("Distract")]
     public bool facingLeft = false;
@@ -94,6 +94,17 @@ public class PlayerMovement : MonoBehaviour
         {
             Crouch();
         }
+        
+        if (Input.GetKeyDown(attackKey))
+        {
+            UnityEngine.Debug.Log("Attacking");
+            Attack();
+        }
+
+        else if (Input.GetKeyUp(attackKey))
+        {
+            animator.SetBool("Attacking", false);
+        }
     }
 
     private void FixedUpdate()
@@ -134,12 +145,19 @@ public class PlayerMovement : MonoBehaviour
             sideSize = sideSize * 2f;
             */
         }
-        /*
+
         if (Input.GetKeyDown(attackKey))
         {
+            UnityEngine.Debug.Log("Attacking");
             Attack();
         }
-        */
+
+        if (Input.GetKeyUp(attackKey))
+        {
+            animator.SetBool("Attacking", false);
+        }
+
+        /*
         if (Input.GetKeyDown(distractKey))
         {
             if (distractCooldown <= 0)
@@ -147,6 +165,7 @@ public class PlayerMovement : MonoBehaviour
                 Distract();
             }
         }
+        */
     }
 
     private IEnumerator EnableCollider()
@@ -194,26 +213,28 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isCrouched)  //Crouch released
         {
-            transform.localScale = new Vector2(transform.localScale.x, startScaleY);
+            //transform.localScale = new Vector2(transform.localScale.x, startScaleY);
             moveSpeed = walkSpeed;
 
             sideSize = sideSize * 2f;
             isCrouched = false;
+            animator.SetBool("Crouching", false);
         }
         else   //Crouch
         {
-            transform.localScale = new Vector2(transform.localScale.x, crouchScaleY);
+            //transform.localScale = new Vector2(transform.localScale.x, crouchScaleY);
             rb.AddForce(Vector2.down * 5f, ForceMode2D.Impulse);
             moveSpeed = crouchSpeed;
 
             sideSize = sideSize / 2f;
             isCrouched = true;
+            animator.SetBool("Crouching", true);
         }
     }
 
-    /*
     public void Attack()
     {
+        animator.SetBool("Attacking", true);
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
         foreach (Collider2D enemyGameObject in enemy)
         {
@@ -225,7 +246,7 @@ public class PlayerMovement : MonoBehaviour
             //UnityEngine.Debug.Log("Hit enemy"); //Test attack
         }
     }
-    */
+    
 
     public void Distract()
     {
@@ -243,6 +264,7 @@ public class PlayerMovement : MonoBehaviour
             //transform.eulerAngles = new Vector3(0, 0, 0);
             GetComponent<SpriteRenderer>().flipX = false;
             facingLeft = false;
+            attackPoint.transform.position = new Vector3(transform.position.x + 0.5f, attackPoint.transform.position.y, attackPoint.transform.position.z);
         }
 
         else
@@ -250,6 +272,7 @@ public class PlayerMovement : MonoBehaviour
             //transform.eulerAngles = new Vector3(0, 180, 0);
             GetComponent<SpriteRenderer>().flipX = true;
             facingLeft = true;
+            attackPoint.transform.position = new Vector3(transform.position.x - 0.5f, attackPoint.transform.position.y, attackPoint.transform.position.z);
         }
     }
 
