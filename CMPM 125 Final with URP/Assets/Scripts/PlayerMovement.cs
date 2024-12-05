@@ -214,6 +214,8 @@ public class PlayerMovement : MonoBehaviour
         if (isCrouched)  //Crouch released
         {
             //transform.localScale = new Vector2(transform.localScale.x, startScaleY);
+            GetComponent<CapsuleCollider2D>().size = new Vector2(1f, 2f);
+            GetComponent<CapsuleCollider2D>().offset = Vector2.zero;
             moveSpeed = walkSpeed;
 
             sideSize = sideSize * 2f;
@@ -222,7 +224,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else   //Crouch
         {
-            //transform.localScale = new Vector2(transform.localScale.x, crouchScaleY);
+            GetComponent<CapsuleCollider2D>().size = new Vector2(1f, 1f);
+            GetComponent<CapsuleCollider2D>().offset = new Vector2(0f, -0.5f);
             rb.AddForce(Vector2.down * 5f, ForceMode2D.Impulse);
             moveSpeed = crouchSpeed;
 
