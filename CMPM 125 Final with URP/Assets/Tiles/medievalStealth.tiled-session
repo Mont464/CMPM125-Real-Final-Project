@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "Level1.tmx",
     "expandedProjectPaths": [
         "."
     ],
@@ -40,11 +40,11 @@
             "expandedObjectLayers": [
                 4
             ],
-            "scale": 0.7752,
+            "scale": 2,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1742.1310629514965,
-                "y": 376.67698658410745
+                "x": 681.25,
+                "y": 280.5
             }
         },
         "Level1.tmx#bgTiles": {
@@ -112,14 +112,15 @@
     "map.tileHeight": 8,
     "map.tileWidth": 8,
     "openFiles": [
+        "Level1.tmx"
     ],
     "project": "medievalStealth.tiled-project",
     "recentFiles": [
+        "Level1.tmx",
         "Title.tmx",
         "testbed.tmx",
         "hubMap.tmx",
         "Gallows.tmx",
-        "Level1.tmx",
         "C:/Users/kirae/Downloads/Level1.tmx",
         "tiles.tsx"
     ],
