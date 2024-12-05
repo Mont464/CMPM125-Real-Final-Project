@@ -199,7 +199,6 @@ public class PlayerMovement : MonoBehaviour
 
             sideSize = sideSize * 2f;
             isCrouched = false;
-            animator.SetBool("Crouching", false);
         }
         else   //Crouch
         {
@@ -209,7 +208,6 @@ public class PlayerMovement : MonoBehaviour
 
             sideSize = sideSize / 2f;
             isCrouched = true;
-            animator.SetBool("Crouching", true);
         }
     }
 

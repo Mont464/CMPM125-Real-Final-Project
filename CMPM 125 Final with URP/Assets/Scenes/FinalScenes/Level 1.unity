@@ -5103,27 +5103,6 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!95 &1337459937
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337459928}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 66660221e94703e4f8847223edbb4b75, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1339438221 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 998d14440bc84ee4aa465fb93f33d3eb, type: 3}
@@ -7076,8 +7055,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 240.79333, y: 150.94028}
-  m_SizeDelta: {x: 199.2662, y: 78.1194}
+  m_AnchoredPosition: {x: 497.5736, y: 261}
+  m_SizeDelta: {x: 274.8528, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1615565930
 MonoBehaviour:
@@ -8230,8 +8209,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 240.79071, y: 149.7685}
-  m_SizeDelta: {x: 199.2641, y: 75.7759}
+  m_AnchoredPosition: {x: 497.57, y: 259.5}
+  m_SizeDelta: {x: 274.85, y: 97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1868341765 stripped
 Transform:
