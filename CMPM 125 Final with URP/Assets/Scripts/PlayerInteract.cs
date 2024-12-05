@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 //Attack code found at: https://www.youtube.com/watch?v=rwO3TE1G3ag
 
 public class PlayerHide : MonoBehaviour
 {
     private Rigidbody2D rb;
+
+    public Transform respawnPoint;
 
     [Header("Keybinds")]
     private KeyCode attackKey = KeyCode.J;
@@ -36,14 +39,15 @@ public class PlayerHide : MonoBehaviour
 
         if (Input.GetKeyDown(attackKey))
         {
-            Attack();
+            //Attack();
+            gameObject.transform.position = gameObject.GetComponent<PlayerHide>().respawnPoint.position;
         }
         else if (Input.GetKeyDown(interactKey))
         {
             Interact();
         }
     }
-    public void Hide(Vector2 hidePosition)
+    public void Hide(Vector2 hidePosition) //Hide behind object
     {
         if (!isHidden)
         {
@@ -72,7 +76,8 @@ public class PlayerHide : MonoBehaviour
         }
     }
 
-    public void Interact()
+ 
+    public void Interact()  //Check objects in range
     {
         Collider2D[] obj = Physics2D.OverlapCircleAll(interactPoint.transform.position, interactRadius, objects);
         foreach (Collider2D objGameObject in obj)
@@ -89,12 +94,18 @@ public class PlayerHide : MonoBehaviour
             {
                 gameObject.GetComponent<ObjectiveHandler>().completeObjective(objGameObject.gameObject);
             }
+            else if(objGameObject.gameObject.name == "RespawnCandle")
+            {
+                respawnPoint = objGameObject.gameObject.transform;
+                Transform current = objGameObject.gameObject.transform.GetChild(0).GetChild(0); //Get Light2D component from nested object
+                current.GetComponent<Light2D>().intensity = 1.5f;
+            }
         }
     }
 
     private void OnDrawGizmos() //Testing
     {
-        Gizmos.DrawWireSphere(attackPoint.transform.position, attackRadius); //Display attack radius
+        //Gizmos.DrawWireSphere(attackPoint.transform.position, attackRadius); //Display attack radius
         Gizmos.DrawWireSphere(interactPoint.transform.position, interactRadius); //Display interact radius
     }
 }
