@@ -126,10 +126,13 @@ public class EnemyAI : MonoBehaviour
                 currentState = State.Tracking;
             }
         }
+        /*
         if (Vector2.Distance(transform.position, enemyTarget) <= catchRange)
         {
-            Debug.Log("Player caught!");        // Could add player respawn in future development
+            Debug.Log("Player caught!");
+            player.transform.position = player.GetComponent<PlayerHide>().respawnPoint.position;
         }
+        */
     }
 
 
@@ -154,6 +157,7 @@ public class EnemyAI : MonoBehaviour
         if (Vector2.Distance(transform.position, player.position) <= catchRange)
         {
             Debug.Log("Player caught!");        // Could add player respawn in future development
+            player.transform.position = player.GetComponent<PlayerHide>().respawnPoint.position;
         }
     }
 
@@ -181,10 +185,12 @@ public class EnemyAI : MonoBehaviour
             currentState = State.Patrolling;
             flipCount = 0; // Reset the flip counter for the next time
         }
+        /*
         if (Vector2.Distance(transform.position, player.position) <= catchRange)
         {
             Debug.Log("Player caught!");        // Could add player respawn in future development
         }
+        */
 
     }
 

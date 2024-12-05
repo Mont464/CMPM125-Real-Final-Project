@@ -50,7 +50,7 @@ public class GrappleHook : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.K)) //end grapple
             {
                 retracting = false;
-                playerRigid.gravityScale = 1.5f;
+                playerRigid.gravityScale = 1.08f;
                 GetComponent<PlayerMovement>().enabled = true;
                 isGrappling = false;
                 line.enabled = false;
