@@ -17,7 +17,8 @@ public class GrappleHook : MonoBehaviour
     [SerializeField] GameObject grappleEnd;
     bool isGrappling = false;
     [HideInInspector] public bool retracting = false;
-
+    private Animator animator;
+    private string grappleDirection = "side";
     Vector2 target;
     private Rigidbody2D playerRigid;
 
@@ -25,6 +26,7 @@ public class GrappleHook : MonoBehaviour
     {
         line = GetComponent<LineRenderer>();
         playerRigid = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         grappleEnd.SetActive(false);
     }
 
@@ -43,6 +45,21 @@ public class GrappleHook : MonoBehaviour
                 grapplePos = Vector2.Lerp(transform.position, target, grappleSpeed * Time.deltaTime); 
             }
 
+            else
+            {
+                if (animator.GetBool("grappleSide"))
+                {
+                    animator.SetBool("huggingWall", true);
+                    animator.SetBool("huggingCeiling", false);
+                }
+                
+                else if (animator.GetBool("grappleUp"))
+                {
+                    animator.SetBool("huggingWall", false);
+                    animator.SetBool("huggingCeiling", true);
+                }
+            }
+
             transform.position = grapplePos;
 
             line.SetPosition(0, transform.position);
@@ -53,6 +70,11 @@ public class GrappleHook : MonoBehaviour
                 playerRigid.gravityScale = 3f;
                 GetComponent<PlayerMovement>().enabled = true;
                 isGrappling = false;
+                animator.SetBool("Grappling", false);
+                animator.SetBool("huggingWall", false);
+                animator.SetBool("huggingCeiling", false);
+                animator.SetBool("grappleSide", false);
+                animator.SetBool("grappleUp", false);
                 line.enabled = false;
                 grappleEnd.SetActive(false);
             }
@@ -64,7 +86,7 @@ public class GrappleHook : MonoBehaviour
         GetAimDirection();
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grapplableMask); // check if grapple is possible
-
+        animator.SetBool("Grappling", true);
         if (hit.collider != null)
         {
             isGrappling = true; //restrict actions available while grappling
@@ -77,6 +99,11 @@ public class GrappleHook : MonoBehaviour
             grappleEnd.SetActive(true);
             StartCoroutine(Grapple());
         }
+
+        else
+        {
+            animator.SetBool("Grappling", false);
+        }
     }
 
     private void GetAimDirection() //check which way the player wants to grapple
@@ -86,12 +113,14 @@ public class GrappleHook : MonoBehaviour
             endLength = 0.6f;
             direction = -transform.right;
             grappleEnd.transform.eulerAngles = new Vector3(0, 180, 0);
+            grappleDirection = "side";
         }
         if (Input.GetKey(KeyCode.D))
         {
             endLength = 0.6f;
             direction = transform.right;
             grappleEnd.transform.eulerAngles = new Vector3(0, 0, 0);
+            grappleDirection = "side";
 
         }
         if (Input.GetKey(KeyCode.W))
@@ -99,6 +128,7 @@ public class GrappleHook : MonoBehaviour
             endLength = 1.1f;
             direction = transform.up;
             grappleEnd.transform.eulerAngles = new Vector3(0, 0, 90);
+            grappleDirection = "up";
         }
         //Debug.Log(grappleEnd.transform.up);
     }
@@ -121,6 +151,18 @@ public class GrappleHook : MonoBehaviour
             line.SetPosition(1, newPos);
             grappleEnd.transform.position = newPos;
             yield return null;
+        }
+
+        //decide grapple direction animation
+        if (grappleDirection == "side")
+        {
+            animator.SetBool("grappleSide", true);
+            animator.SetBool("grappleUp", false);
+        }
+        else if (grappleDirection == "up")
+        {
+            animator.SetBool("grappleSide", false);
+            animator.SetBool("grappleUp", true);
         }
 
         line.SetPosition(1, target);
